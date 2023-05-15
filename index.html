@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Administrador de Tareas - Prueba de Desarrollo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link rel="stylesheet" href="main.css" />
+</head>
+<body class="container">
+	<div class="todo-app">
+        <h2>Administrador de Tareas</h2>
+		<form class="row" id="new-task-form">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="Añade una nueva tarea" />
+			<input 
+				type="submit"
+				id="new-task-submit" 
+				value="Añadir" />
+		</form>
+		<h2>Tareas Pendientes</h2>
+		<div class="row">
+			<div class="input-field col s12">
+			  <input id="filter-task-input" type="text" name="filter" placeholder="Buscar Tareas Pendientes..." />
+			</div>
+		</div>
+        <section class="task-list">
+
+			<div id="tasks">
+
+				<!-- <div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> -->
+
+			</div>
+		</section>
+    </div>
+    <div class="todo-app">
+		<h2>Tareas Completadas</h2>
+		<div class="row">
+			<div>
+			  <input id="filter-completed-task-input" type="text" name="filter" placeholder="Buscar Tareas Completadas..." />
+			</div>
+		</div>
+        <section class="task-list">
+
+			<div id="completed-tasks">
+
+				<!-- <div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> -->
+
+			</div>
+		</section>
+    </div>
+		
+	
+
+	<script src="main.js"></script>
+</body>
+</html>
